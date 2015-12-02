@@ -1,7 +1,6 @@
 /*
 !.gitignore
-!vimrc
-!gvimrc
+!.vimrc
 !/bundle/
 !/syntax/
 !/colors/

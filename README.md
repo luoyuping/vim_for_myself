@@ -1,5 +1,3 @@
-# vim_ide_for_C-C-
-
 
 ##手工打造的IDE for C/C++ 
 主要参考的资料有：

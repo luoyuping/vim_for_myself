@@ -1,4 +1,3 @@
-
 set background=dark
 
 hi clear

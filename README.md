@@ -22,4 +22,23 @@ ps :个人使用，对他人没有太多的价值
 
 + 已经安装的插件
     - ack.vim
-    -
+    - a.vim 
+    - ctrlp.vim
+    - ctrlsp.vim
+    - DfrankUtil
+    - grep
+    - indexer
+    - minibufexpl.vim
+    - nerdtree
+    - STL-Syntax
+    - synctastic
+    - tagbar
+    - ultisnips
+    - vim-easymotion
+    - vim-indent-guides
+    - vim-pathogen
+    - vim-powerline
+    - vimprj
+    - vim-signature
+    - wildfire.vim
+    - YCM(ps:选着性安装吧，该插件需要编译安装，平台性依赖

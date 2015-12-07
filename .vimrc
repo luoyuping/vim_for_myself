@@ -379,8 +379,8 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 "============================== Plugin YcmCompleteMe
 " YCM 补全
 
+set tags+=/usr/include/c++/4.8.2/stdcpp.tags
 "" YCM 补全菜单配色
-"set tags+=/usr/include/c++/4.8.2/stdcpp.tags
 "" 补全内容不以分割子窗口形式现，只显示补全列表
 "set completeopt-=preview
 
@@ -421,10 +421,10 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 "" 只能是 #include 或已打开的文件
 "nnoremap <leader>je :YcmCompleter GoToDefinition<CR>
 
-""============================= Plugin syntastic 
-"" 静态分析器 syntastic 错误标识
-"let g:syntastic_error_symbol = '✗'
-"let g:syntastic_warning_symbol = '⚠'
+"============================= Plugin syntastic 
+" 静态分析器 syntastic 错误标识
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
 
 
 "============================ Plugin vim-protodef && Plugin vim-fswitch

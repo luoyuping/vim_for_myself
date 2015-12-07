@@ -58,6 +58,6 @@
 [submodule "bundle/a.vim"]
 	path = bundle/a.vim
 	url = https://github.com/vim-scripts/a.vim.git
-[submodule "bundle/pathogen/autoload/vim-pathogen"]
-	path = bundle/pathogen/autoload/vim-pathogen
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git

@@ -592,7 +592,7 @@ augroup END
     ""Toggle Menu and Toolbar
     "set guioptions+=m
     "set guioptions+=T
-    "map <silent> <F5> :if &guioptions =~# 'T' <Bar>
+    "map <silent> <F6> :if &guioptions =~# 'T' <Bar>
             "\set guioptions-=T <Bar>
             "\set guioptions-=m <bar>
             "\else <Bar>
@@ -601,7 +601,7 @@ augroup END
             "\endif<CR>
 
     "" 设置 gvim 显示字体
-    ""set guifont=YaHei\ Consolas\ Hybrid\ 11.5
+    ""set guifont=Microsoft\ YaHei\ Mono\ 12
     ""colorscheme molokai
     "colorscheme github 
 "endfunction
@@ -617,6 +617,7 @@ if has("gui_running")
     " 禁止显示菜单和工具条
     set guioptions-=m
     set guioptions-=T
+    set guifont=Microsoft\ YaHei\ Mono\ 12
     "Toggle Menu and Toolbar
     "set guioptions+=m
     "set guioptions+=T
@@ -629,7 +630,6 @@ if has("gui_running")
             \endif<CR>
 
     " 设置 gvim 显示字体
-    "set guifont=YaHei\ Consolas\ Hybrid\ 11.5
     colorscheme molokai
     "colorscheme github 
 endif 

@@ -370,7 +370,11 @@ nnoremap <Leader>rwc :call Replace(1, 1, input('Replace '.expand('<cword>').' wi
 "============================= Plugin UltiSnips 
 " 模板补全
 " UltiSnips 的 tab 键与 YCM 冲突，重新设定
+<<<<<<< HEAD
 let g:UltiSnipsSnippetDirectories=["mysnippets"]
+=======
+let g:UltiSnipsSnippetDirectories=["../mysnippets"]
+>>>>>>> origin
 let g:UltiSnipsExpandTrigger="<leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
 let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
@@ -379,10 +383,17 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 "============================== Plugin YcmCompleteMe
 " YCM 补全
 
+<<<<<<< HEAD
 " YCM 补全菜单配色
 set tags+=/usr/include/c++/4.8.2/stdcpp.tags
 " 补全内容不以分割子窗口形式现，只显示补全列表
 set completeopt-=preview
+=======
+set tags+=/usr/include/c++/4.8.2/stdcpp.tags
+"" YCM 补全菜单配色
+"" 补全内容不以分割子窗口形式现，只显示补全列表
+"set completeopt-=preview
+>>>>>>> origin
 
 
 highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5

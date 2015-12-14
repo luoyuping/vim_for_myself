@@ -9,6 +9,7 @@ let mapleader=";"
 "==================
 " 全局配置
 " 文件类型侦测 " 开启文件类型侦测 filetype on
+"filetype on
 " 根据侦测到的不同类型加载对应的插件
 filetype plugin on
 
@@ -376,7 +377,7 @@ let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
 let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 
 
-"============================== Plugin YcmCompleteMe
+"============================== Plugin YouCompleteMe
 " YCM 补全
 
 " 补全内容不以分割子窗口形式现，只显示补全列表
@@ -422,6 +423,16 @@ let g:ycm_always_populate_location_list =1
 nnoremap <leader>jd :YcmCompleter GoToDeclaration<CR>
 " 只能是 #include 或已打开的文件
 nnoremap <leader>je :YcmCompleter GoToDefinition<CR>
+"YCM black_list黑名单
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar' : 1,
+      \ 'qf' : 1,
+      \ 'notes' : 1,
+      \ 'unite' : 1,
+      \ 'text' : 1,
+      \ 'vimwiki' : 1,
+      \ 'gitcommit' : 1,
+      \}
 
 "============================= Plugin syntastic 
 " 静态分析器 syntastic 错误标识

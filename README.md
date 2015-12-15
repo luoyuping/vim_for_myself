@@ -42,5 +42,5 @@ ps :个人使用，对他人没有太多的价值
     - YCM(ps:选着性安装吧，该插件需要编译安装，平台性依赖
 
 + 如果你想尝试我的vim 配置 ，你可以按以下步骤安装
-    - git submodule add https://github.com/luoyuping/vim_for_myself.git
+    - git cloone https://github.com/luoyuping/vim_for_myself.git
     - git submodule init && git submodule update

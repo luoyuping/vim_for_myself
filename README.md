@@ -13,8 +13,8 @@ ps :个人使用，对他人没有太多的价值
 **如果你真的准备好面对问题时，请接收持续的蛋疼和忧伤**
 
 ~~
-+ 生命不止，折腾不息，vim终极版 [vim ultimate--spf13](http://vim.spf13.com/) ，不容错过
 
++
 ![效果图来张](http://i3.tietuku.com/1b3825c47aa91fd5.png) 
 ~~
 

@@ -21,6 +21,7 @@ syntax enable
 
 " 补充
 set wrap
+set so=8          "scolloff = 8 lines
 "set rnu
 "===================
 " vim 自身（非插件）快捷键
@@ -66,6 +67,8 @@ nnoremap <Leader>jw <C-W>j
  "定义快捷键在结对符之间跳转，助记 pair
 nnoremap <Leader>pa %
 
+nnoremap <leader>v :vi ~/.vimrc<CR>
+nnoremap <leader>sv :source ~/.vimrc <CR> 
 
 " 保存快捷键
 "noremap <leader>ss :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>
@@ -211,7 +214,7 @@ let g:indent_guides_start_level=2
 " 色块宽度
 let g:indent_guides_guide_size=1
 " 快捷键 i 开/关缩进可视化
-nnoremap <silent> <Leader>i <Plug>IndentGuidesToggle
+nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 
 
 
@@ -463,26 +466,30 @@ nnoremap <Leader>man :Man 3 <cword><CR>
 " 工程文件浏览
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
 "nmap <Leader>fl :NERDTreeToggle<CR>
-
-nnoremap <F3> :NERDTreeToggle<CR>
+"回车，打开选中文件；
+"r，刷新工程目录文件列表；
+"I（大写），显示/隐藏隐藏文件；
+"m，出现创建/删除/剪切/拷贝操作列表
+nnoremap fl :NERDTreeToggle<CR>
 
 " 设置 NERDTree 子窗口宽度
 let NERDTreeWinSize=22
 " 设置 NERDTree 子窗口位置
 let NERDTreeWinPos="right"
 " 显示隐藏文件
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 " NERDTree 子窗口中不显示冗余帮助信息
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
-
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 "======================== Plugin MiniBufExplorer 
 " 多文档编辑
 " 显示/隐藏 MiniBufExplorer 窗口
 "map <Leader>bl :MBEToggle<cr>
-noremap <F2> :MBEToggle<cr>
+noremap bl :MBEToggle<cr>
 " buffer 切换快捷键
 noremap <C-Tab> :MBEbn<cr>
 noremap <C-S-Tab> :MBEbp<cr>
@@ -500,8 +507,9 @@ noremap <C-S-Tab> :MBEbp<cr>
 "================================ Plugin wildfire 
 " 快速选中结对符内的文本
 " 快捷键
-noremap <SPACE> <Plug>(wildfire-fuel)
-vnoremap <S-SPACE> <Plug>(wildfire-water)
+" 这里也是日了狗了，不能限制递归条件，也就是不能使用 nnoremap 和 vnoremap 
+nmap <SPACE> <Plug>(wildfire-fuel)
+vmap <S-SPACE> <Plug>(wildfire-water)
 
 " 适用于哪些结对符
 let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
@@ -511,7 +519,7 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 
 "========================== Plugin gundo 
 " 调用 gundo 树
-nnoremap <Leader>ud :GundoToggle<CR>
+"nnoremap <Leader>ud :GundoToggle<CR>
 
 "========================== goyo.vim 
 

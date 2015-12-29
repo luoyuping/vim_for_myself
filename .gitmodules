@@ -70,3 +70,6 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = https://github.com/suan/vim-instant-markdown.git
+[submodule "bundle/indexer"]
+	path = bundle/indexer
+	url = https://github.com/wwfiney/indexer.git

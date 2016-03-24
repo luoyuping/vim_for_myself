@@ -642,3 +642,9 @@ if has("gui_running")
     "colorscheme github 
 endif 
 "}}}
+
+
+" only for mac
+set backspace=2
+" git commit message 规范
+autocmd Filetype gitcommit setlocal spell textwidth=72
